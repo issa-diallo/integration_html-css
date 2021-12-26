@@ -1,0 +1,21 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.etoile {
+  color: var(--main);
+}
+
+.etoile-grey {
+  color: var(--grey);
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}

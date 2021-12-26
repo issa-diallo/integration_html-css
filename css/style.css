@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Raleway", sans-serif;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --main: #0065fc;
+  --light: #deebff;
+  --grey: #f2f2f2;
+  --black: rgba(0, 0, 0, 0.87);
+}
