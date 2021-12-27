@@ -46,6 +46,11 @@
   color: white;
   background: var(--main);
 }
+.flexaroundmobil {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 /* INFO */
 .info {
@@ -67,4 +72,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .filter {
+    flex-direction: column;
+  }
+  .flexaroundmobil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mobilFiltreWrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filter-text-icon {
+    margin-bottom: 20px;
+  }
 }
