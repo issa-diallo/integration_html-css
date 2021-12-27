@@ -20,3 +20,15 @@
   height: 150px;
   margin-right: 380px;
 }
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding-left: 20px;
+  }
+  .block-footer-propos {
+    margin-left: 0;
+  }
+}

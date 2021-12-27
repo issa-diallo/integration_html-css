@@ -61,4 +61,26 @@ figure {
 }
 
 @media screen and (max-width: 768px) {
+  .housing {
+    flex: none;
+    width: 90%;
+    margin-right: 0;
+    margin-top: 50px;
+    height: auto;
+  }
+  .column2 {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .column {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .tag {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .detail {
+    height: auto;
+  }
 }
