@@ -18,3 +18,13 @@ body {
   --grey: #f2f2f2;
   --black: rgba(0, 0, 0, 0.87);
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .marginFiltre {
+    padding-left: 5%;
+  }
+}

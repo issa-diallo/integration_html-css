@@ -24,6 +24,7 @@
   background-color: white;
   padding: 1%;
   border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px var(--grey);
 }
 
 .tag:hover {
@@ -60,17 +61,32 @@ figure {
   margin: 0;
 }
 
+@media screen and (max-width: 1280px) {
+  .tag {
+    height: auto;
+  }
+  .housing {
+    min-height: auto;
+    padding: 20px;
+  }
+  .detail {
+    min-height: 150px;
+    padding-left: 5%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .housing {
     flex: none;
-    width: 90%;
+    width: 100%;
     margin-right: 0;
-    margin-top: 50px;
     height: auto;
+    background-color: white;
   }
   .column2 {
     flex-direction: column;
     margin-top: 0;
+    margin-bottom: 0;
   }
   .column {
     flex-direction: column;

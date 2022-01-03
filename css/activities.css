@@ -74,9 +74,17 @@
 }
 
 @media screen and (max-width: 768px) {
+  .activities {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .activities h2 {
+    margin: 0;
+  }
   .block-activities {
     flex-direction: column;
     height: auto;
+    padding: 5%;
   }
   .block-activities2 {
     width: 100%;

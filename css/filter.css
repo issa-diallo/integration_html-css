@@ -10,7 +10,7 @@
 }
 
 .filter-text-icon {
-  border: 1px solid var(--grey);
+  border: 2px solid var(--grey);
   height: 50px;
   border-radius: 30px;
   margin-right: 20px;
@@ -75,7 +75,7 @@
 }
 @media screen and (max-width: 768px) {
   .filter {
-    flex-direction: column;
+    margin-top: 10px;
   }
   .flexaroundmobil {
     display: flex;
@@ -88,5 +88,12 @@
   }
   .filter-text-icon {
     margin-bottom: 20px;
+  }
+  .info {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .info p {
+    line-height: normal;
   }
 }

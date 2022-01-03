@@ -27,8 +27,12 @@
     align-items: flex-start;
     height: auto;
     padding-left: 20px;
+    margin-top: 0;
   }
   .block-footer-propos {
     margin-left: 0;
+  }
+  .block-footer-asistance {
+    width: 200px;
   }
 }
