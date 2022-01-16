@@ -1,17 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+/* GENERAL */
 * {
   box-sizing: border-box;
 }
-
+html,
 body {
-  height: 100%;
-  font-size: 16px;
-  color: rgba(0, 0, 0, 0.87);
   font-family: "Raleway", sans-serif;
-  line-height: 1.8;
-  display: flex;
-  flex-direction: column;
+  margin-top: 0;
 }
-
 :root {
   --main: #0065fc;
   --light: #deebff;
@@ -19,12 +15,371 @@ body {
   --black: rgba(0, 0, 0, 0.87);
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  .marginFiltre {
-    padding-left: 5%;
-  }
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexAround {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flexColumnCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexColumnAround {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.flexColumnBetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.colorMain {
+  color: var(--main);
+}
+.colorBlack {
+  color: var(--black);
+}
+.colorGrey {
+  color: var(--grey);
+}
+.backgroundGrey {
+  background-color: var(--grey);
+}
+.backgroundMain {
+  background-color: var(--main);
+}
+.decorationNone {
+  text-decoration: none;
+}
+.textBold {
+  font-weight: bold;
+}
+.borderNone {
+  border: none;
+}
+.etoile {
+  color: var(--main);
+}
+
+.etoile-grey {
+  color: var(--grey);
+}
+
+.textBold {
+  font-weight: bold;
+}
+/* NAVIGATION */
+
+.sizeLink {
+  width: 140px;
+  height: 99px;
+}
+.sizeLink12 {
+  width: 60%;
+}
+.sizeLinks {
+  width: 100%;
+}
+
+nav img {
+  width: 120px;
+  height: 50px;
+}
+
+.borderNav {
+  border-top: 1px solid transparent;
+}
+.borderNav:hover {
+  border-top: 2px solid var(--main);
+  cursor: pointer;
+}
+.borderNav:hover > a {
+  color: var(--main);
+}
+
+header {
+  height: 100px;
+}
+/* SEARCH */
+.borderSearch {
+  width: 400px;
+  border-radius: 10px;
+  border: 0.5px solid var(--grey);
+}
+.search {
+  height: 50px;
+  width: 230px;
+  font-size: 18px;
+  color: var(--black);
+  font-weight: bold;
+}
+.iconSize {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px 0 0 10px;
+}
+.paddingSearch {
+  padding-left: 20px;
+}
+.buttonSearch {
+  height: 50px;
+  width: 120px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+.buttonSearch:hover {
+  color: var(--main);
+  background-color: var(--grey);
+}
+.desktop {
+  display: none;
+}
+/* FILTER */
+.filter {
+  display: flex;
+  align-items: center;
+}
+.margFilter {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.titleMargFilter {
+  margin-right: 20px;
+}
+.filterTextIcons {
+  border: 2px solid var(--grey);
+  height: 50px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.filterTextIcons:hover > .filterText {
+  color: var(--main);
+}
+.filterTextIcons:hover > .filterIcon {
+  color: white;
+  background-color: var(--main);
+}
+.filterText {
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 25px 25px 0;
+}
+
+.filterIcon {
+  border-radius: 25px;
+  width: 50px;
+  height: 48px;
+  color: var(--main);
+  background-color: var(--light);
+  margin-left: -2px;
+}
+/* INFORMATION */
+.info {
+  display: flex;
+  align-items: center;
+}
+.icon-info {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--grey);
+  border-radius: 25px;
+  margin-right: 5px;
+}
+/* HOUSING */
+.sizeHousing {
+  flex: 2;
+  height: 650px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.imgHousing {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.blockHousing {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cubeHousing {
+  width: 30%;
+  height: auto;
+  background-color: white;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 1px var(--grey);
+}
+.cubeHousing:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+.block1 {
+  margin-bottom: 10px;
+}
+.block2 {
+  margin-top: 10px;
+}
+.detailHousing {
+  width: 90%;
+}
+figure {
+  margin-left: 0;
+}
+/* POPULAR */
+.sizePopular {
+  flex: 1;
+  height: 650px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.blockPopular {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.imgPopular {
+  width: 40%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+.cubePopular {
+  background-color: white;
+  height: auto;
+  padding: 1% 0 1% 1%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 1px var(--grey);
+}
+.cubePopular:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+.blockPopular12 {
+  margin-bottom: 20px;
+}
+.cubeDetailPopular {
+  width: 60%;
+  padding-left: 5%;
+}
+
+/* .cubeDetailPopular figure {
+  margin-top: 50px;
+} */
+.widthPopular {
+  width: 100%;
+}
+/* ACTIVITIES */
+.activities {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.blockActivities {
+  width: 100%;
+  height: 650px;
+}
+.blockActivities2356 {
+  width: 23%;
+  height: 610px;
+}
+.imgActivities {
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.cubeActivities {
+  width: 23%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px var(--grey);
+}
+.cubeActivities:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+.heightActivities {
+  height: auto;
+}
+.titleActivities {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 25px;
+  padding-left: 5%;
+  width: 95%;
+}
+
+.imgActivities2 {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.imgActivities3 {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.imgActivities4 {
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.imgActivities5 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.imgActivities6 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.cubeActivites2356 {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px var(--grey);
+}
+.cubeActivites2356:hover {
+  cursor: pointer;
+  transform: scale(0.97);
+}
+/* FOOTER */
+.footer {
+  height: 300px;
+  margin-top: 100px;
+}
+.heightFooter {
+  height: 150px;
+}
+.marginFooter1 {
+  margin-left: 1%;
+}
+.marginFooter2 {
+  margin-left: 0;
+}
+.marginFooter3 {
+  margin-right: 25%;
+}
+.linkFooter {
+  height: 30px;
 }
